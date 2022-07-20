@@ -2,3 +2,31 @@
     font-family: 'Roboto', sans-serif;
     color: black;
   }
+
+  :root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    width:500px;
+    height:500px;
+    /*grid-gap: 1em;*/
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border:black dashed 10px;
+    margin:auto;
+    margin-top:150px;
+  }
+  
+  .grid-item {
+    padding: 3px;
+    border: 1px solid black;
+    text-align: center;
+  }
+
+
+  body {
+    background-color: lightgray;
+  }
