@@ -26,6 +26,10 @@ function colorCell(target){
     target.style.backgroundColor = 'black';
 }
 
+function unColorCell(target){
+    target.style.backgroundColor = "transparent";
+}
+
 
 container.addEventListener('mouseover', function (e){
     target = e.target;
@@ -34,3 +38,14 @@ container.addEventListener('mouseover', function (e){
     }
 })
 
+
+
+
+const resetButElem = document.getElementById("reset-button");
+resetButElem.addEventListener("click", function (){
+    let cellNodes = document.querySelectorAll("#container > div");
+
+    for (let cell of cellNodes){
+        unColorCell(cell);
+    }
+})
