@@ -26,7 +26,33 @@
     text-align: center;
   }
 
+  .title-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background:blue;*/
+    width: auto;
+    height: auto;
+    border:red dashed;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top:50px;
+  }
+
+
 
   body {
-    background-color: lightgray;
+    /*background-color: #d3d3d3;*/
+    background: rgb(174,188,191);
+    background: linear-gradient(0deg, rgba(174,188,191,1) 26%, rgba(211,211,211,1) 95%);
+    
+  }
+
+  html{
+    height:100%;
+  }
+
+  * {
+    font-family: 'Roboto', sans-serif;
+    color: black;
   }
